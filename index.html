@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./public/css/navigation.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <script src="./src/index.js" type="module"></script>
+    <script src="./src/auth.js" type="module"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="main-navigation">
+            <ul class="main-nav-list">
+
+                <span class="guest-links">
+                    <li><a href="/login">Вход</a></li>
+                    <li><a href="/register">Регистрация</a></li>
+                </span>
+
+                <span class="user-links">
+                    <li><a href="/changeData">Промяна на имейл или парола</a></li>
+                    <li><a href="/logout">Изход</a></li>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="root">
+        <div id="register-form">
+
+            <form method="post" class="form">
+
+                <h1>Регистрация</h1>
+
+                <div>
+                    <label for="firstNameField">Име</label>
+                    <input type="text" name="firstName" id="firstNameField">
+                </div>
+
+                <div>
+                    <label for="lastNameField">Фамилия</label>
+                    <input type="text" name="lastName" id="lastNameField">
+                </div>
+
+                <div>
+                    <label for="phoneField">Телефон</label>
+                    <input type="tel" name="phone" id="phoneField">
+                </div>
+
+                <div>
+                    <label for="emailField">Имейл</label>
+                    <input type="email" name="email" id="emailField">
+                </div>
+
+                <div>
+                    <label for="passwordField">Парола</label>
+                    <input type="password" name="password" id="passwordField">
+                </div>
+
+                <div>
+                    <label for="rePasswordField">Потвърди парола</label>
+                    <input type="password" name="rePassword" id="rePasswordField">
+
+                </div>
+
+                <div>
+                    <p class="error-message1">Паролите не съвпадат!</p>
+                    <button type="submit">Регистрация</button>
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+        <div id="login-form">
+
+            <form method="post" class="form">
+
+                <h1>Вход</h1>
+
+                <div>
+                    <label for="emailField">Имейл</label>
+                    <input type="email" name="email" id="emailField">
+                </div>
+
+                <div>
+                    <label for="passwordField">Парола</label>
+                    <input type="password" name="password" id="passwordField">
+                </div>
+
+                <div>
+                    <p class="error-message2">Паролата не е правилна!</p>
+                    <button type="submit">Вход</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div id="change-form">
+
+            <form method="post" class="form">
+
+                <h1>Промяна на имейл или парола</h1>
+
+
+                <div>
+                    <label for="firstNameFieldChange">Име</label>
+                    <input type="text" name="firstName" id="firstNameFieldChange">
+                </div>
+
+                <div>
+                    <label for="lastNameFieldChange">Фамилия</label>
+                    <input type="text" name="lastName" id="lastNameFieldChange">
+                </div>
+
+                <div>
+                    <label for="phoneFieldChange">Телефон</label>
+                    <input type="text" name="phone" id="phoneFieldChange">
+                </div>
+
+                <div>
+                    <label for="emailFieldChange">Имейл</label>
+                    <input type="email" name="email" id="emailFieldChange">
+                </div>
+
+                <div>
+                    <label for="passwordFieldChange">Парола</label>
+                    <input type="password" name="password" id="passwordFieldChange">
+                </div>
+
+                <div>
+                    <p class="error-message3">Паролата не е правилна!</p>
+                    <p class="success-message">Успешно променихте данните ви!</p>
+                    <button type="submit">Промени</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="success">
+            <p>Добре дошли в системата!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

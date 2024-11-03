@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #CCC;
+}
+
+
+.main-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-nav-list li {
+    padding: 0.7em;
+    border: 0.15em solid #CCC;
+    border-radius: 1em;
+    list-style-type: none;
+    font-size: 1.8em;
+    display: inline-flex;
+}
+
+
+.main-nav-list li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.user-links li {
+    margin-right: 3em;
+}
+
+.guest-links li {
+    margin-right: 3em;
+}
