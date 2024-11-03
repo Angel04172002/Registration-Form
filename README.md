@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Single Page Application (SPA) that allows users to register, log in, log out, and change their data. User information is securely stored in an MS SQL database. The application has a Node.js server for handling backend operations and vanilla JavaScript for the frontend.
+This project is a Single Page Application (SPA) that allows users to register, log in, log out, and change their data. All data entered from the users is validated. User information is securely stored in an MS SQL database. The application has a Node.js server for handling backend operations and vanilla JavaScript for the frontend.
 
 ## Technologies Used
 
@@ -19,6 +19,17 @@ The application provides the following functionalities:
 - **User Login**: Registered users can log in using their credentials.
 - **User Logout**: Users can log out. 
 - **Data Modification**: Users can change their personal information.
+
+## Validations
+
+All user data is validated both on the client and the server. The validations are:
+
+- **Password must be at least 6 symbols long**
+- **Email should be in a valid format**
+- **All fields are required**
+- **Users cannot register with an email that already exists**
+- **Users cannot login with an email that does not exist**
+- **Users cannot login with a wrong password**
 
 ## File Structure
 
